@@ -5,7 +5,7 @@ This project examines over 17 years of historical stock price data for Bajaj Aut
 
 The goal is to build a complete, end-to-end analytics workflow that mirrors how financial analysts, quantitative researchers, and market data teams approach real-world stock behavior.
 
-🔍 Project Overview
+* Project Overview
 
 This analysis focuses on:
 
@@ -21,7 +21,7 @@ Applying a consistent, structured data-cleaning process
 
 Generating clear visualizations for insight-driven storytelling
 
-🧹 Data Cleaning & Preprocessing
+* Data Cleaning & Preprocessing
 
 Key steps performed:
 
@@ -39,7 +39,7 @@ Verified dataset integrity before modeling
 
 This ensures the dataset is reliable for forecasting and machine-learning tasks.
 
-⚠️ Anomaly Detection (Z-Score Method)
+* Anomaly Detection (Z-Score Method)
 
 Anomalies were identified using a Z-Score threshold of ±3, applied on:
 
@@ -53,12 +53,11 @@ Number of trades
 
 This method helps highlight trading days with unusually high or low activity compared to historical patterns.
 
-📌 Anomaly Visual
+## Anomaly Visual
 
-(Add your picture here)
-![Anomaly Plot](images/anomaly_plot.png)
+![image alt](https://github.com/sumanlamichhane984/Bajaj_stock_price_analysis_2002to2020/blob/main/Figure_1.png)
 
-🔮 ARIMA Time-Series Forecasting
+ARIMA Time-Series Forecasting
 Process Summary
 
 Resampled data to a consistent daily frequency
@@ -76,10 +75,10 @@ Evaluated the model using MAE and RMSE
 📈 Forecast Plots
 
 (Add your image here)
-![ARIMA Forecast](images/arima_forecast.png)
+![image alt](https://github.com/sumanlamichhane984/Bajaj_stock_price_analysis_2002to2020/blob/main/Figure_2.png)
 
 (Add future forecast plot)
-![Future 30-Day Prediction](images/future_prediction.png)
+![image alt](https://github.com/sumanlamichhane984/Bajaj_stock_price_analysis_2002to2020/blob/main/Figure_3.png)
 
 📊 K-Means Clustering Analysis
 Features Used
@@ -112,12 +111,12 @@ Cluster 2: Regular medium-activity days
 
 Cluster 3: High-volatility, high-turnover days
 
-📌 Clustering Visual
+ Clustering Visual
 
 (Add your image here)
-![Cluster Plot](images/cluster_analysis.png)
+![image alt](https://github.com/sumanlamichhane984/Bajaj_stock_price_analysis_2002to2020/blob/442ffbca8eb9201abcedd4bdfb54aec6f8955612/Figure_5.png)
 
-📉 Long-Term Trend and Pattern Analysis
+## Long-Term Trend and Pattern Analysis
 
 The project also includes:
 
@@ -129,7 +128,7 @@ Trend shifts around major market events
 
 Volume–price relationship insights
 
-📌 Trend Chart
+### Trend Chart
 
 (Add your image here)
-![Long Term Trend](images/long_term_trend.png)
+![image alt](https://github.com/sumanlamichhane984/Bajaj_stock_price_analysis_2002to2020/blob/main/Figure_6.png)
