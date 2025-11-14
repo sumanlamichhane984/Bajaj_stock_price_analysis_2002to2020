@@ -1,42 +1,49 @@
 # Bajaj_stock_price_analysis_2003to2020
-Indian Automotive Giant Bajaj Stock Analysis as well as Forecasting
 Bajaj Stock Price Analysis (2003–2020)
-This project analyzes 17+ years of Bajaj Auto stock price data. It includes full data cleaning, anomaly detection, forecasting using ARIMA, and machine learning clustering to understand stock behavior and trading patterns.
-The goal is to build an end-to-end, real-world data analytics workflow.
 
+This project examines over 17 years of historical stock price data for Bajaj Auto, one of India’s major automotive manufacturers. The analysis covers long-term trend behavior, anomaly detection using statistical techniques, time-series forecasting through ARIMA, and machine-learning clustering to segment trading patterns.
 
-Project Overview
+The goal is to build a complete, end-to-end analytics workflow that mirrors how financial analysts, quantitative researchers, and market data teams approach real-world stock behavior.
+
+🔍 Project Overview
+
 This analysis focuses on:
 
 Understanding long-term stock trends
 
-Detecting unusual trading activity
+Detecting unusual or outlier trading activity
 
-Forecasting closing prices using ARIMA
+Forecasting closing prices using ARIMA models
 
-Grouping similar trading days using K-Means clustering
+Grouping similar trading behaviors using K-Means clustering
 
-Applying a consistent data-cleaning and preprocessing pipeline
+Applying a consistent, structured data-cleaning process
 
-1. Data Cleaning & Preprocessing
+Generating clear visualizations for insight-driven storytelling
 
-Steps performed:
+🧹 Data Cleaning & Preprocessing
 
-Standardized column names
+Key steps performed:
 
-Parsed and sorted date column
+Standardized column names for consistency
 
-Converted numerical fields into correct data types
+Parsed and sorted the date column
+
+Converted all numerical fields into correct datatypes
 
 Removed invalid/corrupted rows
 
-Interpolated missing values for continuous time-series
+Interpolated missing values to maintain a continuous time series
 
-. Anomaly Detection (Z-Score)
+Verified dataset integrity before modeling
 
-Anomalies were detected using a Z-Score threshold of ±3 on:
+This ensures the dataset is reliable for forecasting and machine-learning tasks.
 
-Close price
+⚠️ Anomaly Detection (Z-Score Method)
+
+Anomalies were identified using a Z-Score threshold of ±3, applied on:
+
+Closing price
 
 Turnover
 
@@ -44,62 +51,85 @@ Traded quantity
 
 Number of trades
 
-3. ARIMA Time-Series Forecasting
+This method helps highlight trading days with unusually high or low activity compared to historical patterns.
 
-Process:
+📌 Anomaly Visual
 
-Resampled data to a daily frequency
+(Add your picture here)
+![Anomaly Plot](images/anomaly_plot.png)
 
-Performed an 80/20 train-test split
+🔮 ARIMA Time-Series Forecasting
+Process Summary
 
-Automatically searched for optimal ARIMA (p, d, q) using AIC
+Resampled data to a consistent daily frequency
 
-Compared predictions against actual values
+Used an 80/20 train–test split
 
-Produced a 30-day stock price forecast with confidence intervals
+Automatically searched for the best ARIMA (p, d, q) using AIC scoring
 
-Evaluation metrics used: MAE and RMSE.
+Compared model predictions to actual values
 
-4. Visualizations
+Generated a 30-day price forecast with confidence intervals
 
-This project includes:
+Evaluated the model using MAE and RMSE
 
-Long-term closing price trend plots
+📈 Forecast Plots
 
-Price anomaly plots
+(Add your image here)
+![ARIMA Forecast](images/arima_forecast.png)
 
-Forecast vs. actual comparison
+(Add future forecast plot)
+![Future 30-Day Prediction](images/future_prediction.png)
 
-Future 30-day prediction chart with uncertainty ban
+📊 K-Means Clustering Analysis
+Features Used
 
-5. K-Means Clustering Analysis
+Close price
 
-Features used:
+Turnover
 
-close_price
+Total traded quantity
 
-turnover
+Number of trades
 
-total_traded_quantity
-
-no_of_trades
-
-Steps:
+Steps Performed
 
 Standardized all features
 
-Used Elbow Method to choose optimal cluster count
+Used the Elbow Method to identify the ideal number of clusters
 
 Applied K-Means (k=3)
 
-Visualized cluster distribution and how clusters change over time
+Visualized cluster segments
 
-Cluster insights include:
+Analyzed cluster transitions across different time periods
 
-Low-volume stable days
+Cluster Insights
 
-Medium-activity trading days
+Cluster 1: Low-volume stable trading days
 
-High-volatility days
+Cluster 2: Regular medium-activity days
 
+Cluster 3: High-volatility, high-turnover days
 
+📌 Clustering Visual
+
+(Add your image here)
+![Cluster Plot](images/cluster_analysis.png)
+
+📉 Long-Term Trend and Pattern Analysis
+
+The project also includes:
+
+Closing price trend over 17+ years
+
+Moving averages and rolling behavior
+
+Trend shifts around major market events
+
+Volume–price relationship insights
+
+📌 Trend Chart
+
+(Add your image here)
+![Long Term Trend](images/long_term_trend.png)
